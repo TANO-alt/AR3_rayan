@@ -47,7 +47,9 @@ L’utilisateur peut passer dynamiquement d’un mode à l’autre et observer l
 
 Voici le schéma de branchement du projet :
 
-![Schéma de branchement](assets/Schéma_de_branchement.png)
+<p align="center">
+  <img src="assets/Schéma_de_branchement.png" width="500">
+</p>
 
 ---
 
