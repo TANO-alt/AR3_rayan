@@ -63,7 +63,7 @@ L’utilisateur peut passer dynamiquement d’un mode à l’autre et observer l
 ## Aperçu
 Voici quelques photos du montage : 
 
-> ![Photo du montage](assets/Photo du montage 1.jpg)
+![Photo du montage](assets/Photo du montage 1.jpg)
 
 ![Photo du montage](assets/Photo du montage 3.jpg)
 
