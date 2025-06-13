@@ -67,4 +67,4 @@ Voici quelques photos du montage :
 
 ![Photo du montage](Dantan-Wissam-Actionneur-AR3/assets/Photo du montage 3.jpg)
 
-![Photo du montage](Dantan-Wissam-Actionneur-AR3/assets/Photo du montage 4.jpg)
+![Photo du montage](assets/Photo du montage 4.jpg)
