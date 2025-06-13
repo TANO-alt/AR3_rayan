@@ -67,17 +67,14 @@ Voici le schéma de branchement du projet :
 ## Aperçu
 Voici quelques photos du montage : 
 
-<div style="display: flex; align-items: center; gap: 20px;">
-  
-  <!-- Colonne gauche -->
-  <div style="display: flex; flex-direction: column;">
-    <img src="assets/Photo_du_montage_1.jpg" width="250"><br>
-    <img src="assets/Photo_du_montage_2.jpg" width="250">
-  </div>
-  
-  <!-- Colonne droite -->
-  <div>
-    <img src="assets/Photo_du_montage_3.jpg" width="500">
-  </div>
-
-</div>
+<table>
+  <tr>
+    <td>
+      <img src="assets/Photo_du_montage_1.jpg" width="500"><br>
+      <img src="assets/Photo_du_montage_2.jpg" width="500">
+    </td>
+    <td>
+      <img src="assets/Photo_du_montage_3.jpg" width="500">
+    </td>
+  </tr>
+</table>
