@@ -45,6 +45,10 @@ L’utilisateur peut passer dynamiquement d’un mode à l’autre et observer l
 - Gère dynamiquement le mode actif (`Joystick` ou `Python`)
 - Envoie ou applique la vitesse de rotation du servomoteur
 
+Voici le schéma de branchement du projet :
+
+![Schéma de branchement](assets/Schéma_de_branchement.png)
+
 ---
 
 ## Structure du projet
@@ -65,6 +69,6 @@ Voici quelques photos du montage :
 
 ![Photo du montage 1](assets/Photo_du_montage_1.jpg)
 
-![Photo du montage 3](assets/Photo_du_montage_3.jpg)
+![Photo du montage 2](assets/Photo_du_montage_2.jpg)
 
-![Photo du montage 4](assets/Photo_du_montage_4.jpg)
+![Photo du montage 3](assets/Photo_du_montage_3.jpg)
