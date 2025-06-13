@@ -70,11 +70,11 @@ Voici quelques photos du montage :
 <table>
   <tr>
     <td>
-      <img src="assets/Photo_du_montage_1.jpg" width="490"><br>
-      <img src="assets/Photo_du_montage_2.jpg" width="490">
+      <img src="assets/Photo_du_montage_1.jpg" width="480"><br>
+      <img src="assets/Photo_du_montage_2.jpg" width="480">
     </td>
     <td>
-      <img src="assets/Photo_du_montage_3.jpg" width="540">
+      <img src="assets/Photo_du_montage_3.jpg" width="560">
     </td>
   </tr>
 </table>
