@@ -39,11 +39,11 @@ L’utilisateur peut passer dynamiquement d’un mode à l’autre et observer l
 
 ## Fonctionnement côté Arduino
 
-- Lit l’axe X du joystick via une entrée analogique (A0)
-- Lit l’état du bouton (SW) pour inverser la direction
-- Reçoit des instructions depuis le PC via le port série
-- Gère dynamiquement le mode actif (`Joystick` ou `Python`)
-- Envoie ou applique la vitesse de rotation du servomoteur
+- Lecture de l’axe X du joystick via une entrée analogique (A0)
+- Lecture l’état du bouton (SW) pour inverser la direction
+- Réception des instructions depuis le PC via le port série
+- Gestion dynamique du mode actif (`Joystick` ou `Python`)
+- Définit et envoie la vitesse de rotation du servomoteur
 
 Voici le schéma de branchement du projet :
 
@@ -55,11 +55,17 @@ Voici le schéma de branchement du projet :
 
 ```
 /projet-servo-hybride
+├── assets
+│   └── Photo_du_montage_1.jpg     ← Photo du montage
+│   └── Photo_du_montage_2.jpg     ← Photo du montage
+│   └── Photo_du_montage_3.jpg     ← Photo du montage
+│   └── Photo_du_montage_4.jpg     ← Photo du montage
+│   └── Schéma_de_branchement.png  ← Schéma de branchement du projet
 ├── arduino_servo/
-│   └── arduino_servo.ino     ← Code Arduino
-├── interface_servo.py        ← Interface graphique Python
-├── fond.jpg                  ← Image de fond de l’interface
-├── README.md                 ← Présentation du projet
+│   └── arduino_servo.ino          ← Code Arduino
+├── README.md                      ← Présentation du projet
+├── fond.jpg                       ← Image de fond de l’interface
+├── interface_servo.py             ← Interface graphique Python
 ```
 
 ---
