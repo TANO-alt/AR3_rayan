@@ -2,10 +2,10 @@
 
 ## Objectif
 
-Ce projet permet de contrôler un **servomoteur à rotation continue** via deux modes d'interaction complémentaires :
+Ce projet permet de contrôler un **servomoteur à rotation continue** via deux modes d'interaction :
 
 - Un **joystick physique** connecté à une carte **Arduino Uno**
-- Une **interface graphique Python** réalisée avec Tkinter
+- Une **interface graphique Python**
 
 L’utilisateur peut passer dynamiquement d’un mode à l’autre et observer les effets en temps réel.
 
@@ -32,7 +32,7 @@ L’utilisateur peut passer dynamiquement d’un mode à l’autre et observer l
 - Boutons de **remise à zéro** (vitesse et position)
 - Sélecteur de **mode de contrôle** (`Python` ou `Joystick`)
 - Image de fond personnalisable (`fond.jpg`)
-- Animation visuelle lors du mode aléatoire (optionnel)
+- Animation visuelle lors du mode aléatoire (texte qui change de couleur)
 - Communication série en temps réel avec l’Arduino
 
 ---
@@ -60,45 +60,6 @@ L’utilisateur peut passer dynamiquement d’un mode à l’autre et observer l
 
 ---
 
-## Mise en route
-
-### 1. Côté Arduino
-
-- Ouvrir `arduino_servo.ino` dans l’IDE Arduino
-- Sélectionner la carte et le port
-- Compiler et téléverser le code
-
-### 2. Côté Python
-
-- Installer les dépendances nécessaires :
-
-```bash
-pip install pyserial pillow
-```
-
-- Lancer l’interface :
-
-```bash
-python interface_servo.py
-```
-
----
-
-## Améliorations possibles
-
-- Ajout d’un **mode aléatoire** (vitesse et direction aléatoires)
-- Intégration d’un **affichage de retour visuel** (gauge, LED, etc.)
-- Sauvegarde des sessions ou des configurations
-- Contrôle via un gamepad ou d’autres entrées physiques
-
----
-
 ## Aperçu
 
 > *(Ajouter ici une capture d’écran de l’interface)*
-
----
-
-## Licence
-
-Ce projet est open-source et libre d’utilisation pour des projets éducatifs ou personnels.
