@@ -48,7 +48,7 @@ L’utilisateur peut passer dynamiquement d’un mode à l’autre et observer l
 
 Voici le schéma de branchement du projet :
 
-  <img src="assets/Schéma_de_branchement.png" width="500">
+  <img src="assets/Schéma_de_cablage.png" width="500">
 
 - Le port de communication **COM6** dans le fichier **python/interface_servo.py** à la ligne **6**, est à **modifier** selon celui utilisé.
 
