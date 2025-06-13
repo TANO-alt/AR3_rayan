@@ -67,8 +67,8 @@ Voici le schéma de branchement du projet :
 ## Aperçu
 Voici quelques photos du montage : 
 
-![Photo du montage 1](assets/Photo_du_montage_1.jpg)
-
-![Photo du montage 2](assets/Photo_du_montage_2.jpg)
-
-![Photo du montage 3](assets/Photo_du_montage_3.jpg)
+<p align="center">
+  <img src="assets/photo_montage_1.jpg" width="250">
+  <img src="assets/photo_montage_3.jpg" width="250">
+  <img src="assets/photo_montage_4.jpg" width="250">
+</p>
