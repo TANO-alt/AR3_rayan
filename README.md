@@ -71,7 +71,7 @@ Voici quelques photos du montage :
   
   <!-- Colonne gauche -->
   <div style="display: flex; flex-direction: column;">
-    <img src="assets/Photo_du_montage_1.jpg" width="500">
+    <img src="assets/Photo_du_montage_1.jpg" width="500"><br>
     <img src="assets/Photo_du_montage_2.jpg" width="500">
   </div>
   
