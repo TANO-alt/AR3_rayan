@@ -74,7 +74,7 @@ Voici quelques photos du montage :
       <img src="assets/Photo_du_montage_2.jpg" width="480">
     </td>
     <td>
-      <img src="assets/Photo_du_montage_3.jpg" width="550">
+      <img src="assets/Photo_du_montage_3.jpg" width="540">
     </td>
   </tr>
 </table>
