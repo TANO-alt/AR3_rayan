@@ -47,9 +47,7 @@ L’utilisateur peut passer dynamiquement d’un mode à l’autre et observer l
 
 Voici le schéma de branchement du projet :
 
-<p align="center">
   <img src="assets/Schéma_de_branchement.png" width="500">
-</p>
 
 ---
 
@@ -70,7 +68,7 @@ Voici le schéma de branchement du projet :
 Voici quelques photos du montage : 
 
 <p align="center">
-  <img src="assets/Photo_du_montage_1.jpg" width="500">
-  <img src="assets/Photo_du_montage_2.jpg" width="500">
+  <img src="assets/Photo_du_montage_1.jpg" width="500"><br>
+  <img src="assets/Photo_du_montage_2.jpg" width="500"><br>
   <img src="assets/Photo_du_montage_3.jpg" width="500">
 </p>
