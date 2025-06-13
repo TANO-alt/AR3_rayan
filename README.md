@@ -1,3 +1,5 @@
+![Made with Arduino](https://img.shields.io/badge/Made%20with-Arduino-blue)
+![Python](https://img.shields.io/badge/Python-3.10+-blue)
 # Projet : Contrôle hybride d’un servomoteur à rotation continue (Arduino + Interface Python)
 
 ## Objectif
@@ -32,7 +34,6 @@ L’utilisateur peut passer dynamiquement d’un mode à l’autre et observer l
 - Boutons de **remise à zéro** (vitesse et position)
 - Sélecteur de **mode de contrôle** (`Python` ou `Joystick`)
 - Image de fond personnalisable (`fond.jpg`)
-- Animation visuelle lors du mode aléatoire (texte qui change de couleur)
 - Communication série en temps réel avec l’Arduino
 
 ---
@@ -49,23 +50,27 @@ Voici le schéma de branchement du projet :
 
   <img src="assets/Schéma_de_branchement.png" width="500">
 
+- Le port de communication **COM6** dans le fichier **python/interface_servo.py** à la ligne **6**, est à **modifier** selon celui utilisé.
+
 ---
 
 ## Structure du projet
 
 ```
 /projet-servo-hybride
+├── arduino_servo/
+│   └── arduino_servo.ino          ← Code Arduino
 ├── assets
 │   └── Photo_du_montage_1.jpg     ← Photo du montage
 │   └── Photo_du_montage_2.jpg     ← Photo du montage
 │   └── Photo_du_montage_3.jpg     ← Photo du montage
 │   └── Photo_du_montage_4.jpg     ← Photo du montage
 │   └── Schéma_de_branchement.png  ← Schéma de branchement du projet
-├── arduino_servo/
-│   └── arduino_servo.ino          ← Code Arduino
+├── python
+│   └── interface_servo.py         ← Interface graphique Python
+│   └── fond.jpg                   ← Image de fond de l’interface
+│   └── requirements.txt           ← Installation de pyserial et Pillow via "pip install -r requirements.txt"
 ├── README.md                      ← Présentation du projet
-├── fond.jpg                       ← Image de fond de l’interface
-├── interface_servo.py             ← Interface graphique Python
 ```
 
 ---
