@@ -69,7 +69,7 @@ Voici le schéma de branchement du projet :
 ├── python
 │   └── interface_servo.py         ← Interface graphique Python
 │   └── fond.jpg                   ← Image de fond de l’interface
-│   └── requirements.txt           ← Installation de pyserial et Pillow via "pip install -r requirements.txt"
+│   └── requirements.txt           ← Installation de pyserial et Pillow
 ├── README.md                      ← Présentation du projet
 ```
 
