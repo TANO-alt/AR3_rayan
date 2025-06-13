@@ -2,47 +2,48 @@
 
 ## Objectif
 
-Ce projet a pour but de contrôler un **servomoteur à rotation continue** à l’aide :
+Ce projet permet de contrôler un **servomoteur à rotation continue** via deux modes d'interaction complémentaires :
 
-- d’un **joystick physique** connecté à une carte **Arduino Uno**
-- ou d’une **interface graphique Python interactive** (Tkinter)
+- Un **joystick physique** connecté à une carte **Arduino Uno**
+- Une **interface graphique Python** réalisée avec Tkinter
 
-L’utilisateur peut **basculer dynamiquement** entre les deux modes pour piloter le moteur en temps réel.
+L’utilisateur peut passer dynamiquement d’un mode à l’autre et observer les effets en temps réel.
 
 ---
 
 ## Composants matériels
 
 - Arduino Uno  
-- Servomoteur à rotation continue (broche signal sur D9)  
+- Servomoteur à rotation continue (signal sur D9)  
 - Joystick analogique :
-  - VRx → A0 (X)
-  - SW (bouton) → D4  
-- PC Windows avec Python + interface graphique
+  - VRx connecté à A0 (axe X)
+  - SW connecté à D4 (bouton)
+- Câblage de base (breadboard, fils Dupont)
+- Ordinateur sous Windows avec Python installé
 
 ---
 
 ## Fonctionnalités de l’interface Python
 
-- **Contrôle manuel** du servomoteur :
+- Contrôle du servomoteur :
   - Boutons `Gauche`, `Droite`, `Stop`
   - Curseur de **vitesse**
-  - Curseur de **position (angle 0–180°)** type manivelle
-- Boutons de **remise à zéro**
-- **Sélecteur de mode** :
-  - `Joystick` (pilotage physique)
-  - `Python` (interface GUI)
-- **Image de fond personnalisable** (`fond.jpg`)
-- Comportement en temps réel via port série (pyserial)
+  - Curseur de **position** (angle 0 à 180°, style manivelle)
+- Boutons de **remise à zéro** (vitesse et position)
+- Sélecteur de **mode de contrôle** (`Python` ou `Joystick`)
+- Image de fond personnalisable (`fond.jpg`)
+- Animation visuelle lors du mode aléatoire (optionnel)
+- Communication série en temps réel avec l’Arduino
 
 ---
 
 ## Fonctionnement côté Arduino
 
-- Lecture du joystick (axe X analogique)
-- Lecture du bouton SW pour éventuellement inverser la direction
-- Lecture du port série pour recevoir des commandes depuis le PC
-- Gestion du mode actif (`joystick` ou `Python`)
+- Lit l’axe X du joystick via une entrée analogique (A0)
+- Lit l’état du bouton (SW) pour inverser la direction
+- Reçoit des instructions depuis le PC via le port série
+- Gère dynamiquement le mode actif (`Joystick` ou `Python`)
+- Envoie ou applique la vitesse de rotation du servomoteur
 
 ---
 
@@ -50,36 +51,32 @@ L’utilisateur peut **basculer dynamiquement** entre les deux modes pour pilote
 
 ```
 /projet-servo-hybride
-├── interface_servo.py ← Interface graphique Python
-├── arduino_servo.ino ← Code Arduino
-├── fond.jpg ← Image de fond pour l’interface
-├── README.md ← Ce fichier
+├── arduino_servo/
+│   └── arduino_servo.ino     ← Code Arduino
+├── interface_servo.py        ← Interface graphique Python
+├── fond.jpg                  ← Image de fond de l’interface
+├── README.md                 ← Présentation du projet
 ```
 
 ---
 
-## Lancer le projet
+## Mise en route
 
-### 1. Matériel
-
-- Connecter le joystick (VRx sur A0, SW sur D4)
-- Brancher le servomoteur (signal sur D9)
-- Brancher l’Arduino au PC via USB
-
-### 2. Arduino
+### 1. Côté Arduino
 
 - Ouvrir `arduino_servo.ino` dans l’IDE Arduino
-- Compiler et téléverser sur la carte
+- Sélectionner la carte et le port
+- Compiler et téléverser le code
 
-### 3. Python
+### 2. Côté Python
 
-Installer les bibliothèques nécessaires :
+- Installer les dépendances nécessaires :
 
 ```bash
 pip install pyserial pillow
 ```
 
-Lancer l’interface :
+- Lancer l’interface :
 
 ```bash
 python interface_servo.py
@@ -87,21 +84,21 @@ python interface_servo.py
 
 ---
 
-## Idées d'amélioration
+## Améliorations possibles
 
-- Ajout d’un **mode automatique** (rotation aléatoire)
-- Affichage en temps réel de l’angle calculé
-- Intégration de sons ou d’effets visuels
-- Enregistrement de sessions de contrôle
+- Ajout d’un **mode aléatoire** (vitesse et direction aléatoires)
+- Intégration d’un **affichage de retour visuel** (gauge, LED, etc.)
+- Sauvegarde des sessions ou des configurations
+- Contrôle via un gamepad ou d’autres entrées physiques
 
 ---
 
 ## Aperçu
 
-> *(Ajoutez ici une capture d’écran de l’interface une fois ouverte)*
+> *(Ajouter ici une capture d’écran de l’interface)*
 
 ---
 
 ## Licence
 
-Projet open-source libre d’utilisation à des fins pédagogiques ou personnelles.
+Ce projet est open-source et libre d’utilisation pour des projets éducatifs ou personnels.
